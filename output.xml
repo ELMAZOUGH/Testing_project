@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.3 on win32)" generated="20231012 02:45:46.770" rpa="false" schemaversion="4">
+<suite id="s1" name="Pizza Shop" source="C:\Users\yassi\OneDrive\Bureau\ELMAZOUGHI-YASSINE\Testing\Robot Freamework\pizza_shop.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231012 02:45:47.305" level="INFO">Opening browser 'chrome' to base url 'https://dineshvelhal.github.io/testautomation-playground/login.html'.</msg>
+<status status="PASS" starttime="20231012 02:45:47.305" endtime="20231012 02:45:53.945"/>
+</kw>
+<test id="s1-t1" name="First Test" line="18">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>//*[@id="user"]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:45:53.953" level="INFO">Double clicking element '//*[@id="user"]'.</msg>
+<status status="PASS" starttime="20231012 02:45:53.950" endtime="20231012 02:45:54.305"/>
+</kw>
+<status status="PASS" starttime="20231012 02:45:53.945" endtime="20231012 02:45:54.305"/>
+</test>
+<test id="s1-t2" name="Login" line="25">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="user"]</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231012 02:45:54.305" level="INFO">Typing text 'admin' into text field '//*[@id="user"]'.</msg>
+<status status="PASS" starttime="20231012 02:45:54.305" endtime="20231012 02:45:54.529"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231012 02:45:56.530" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231012 02:45:54.529" endtime="20231012 02:45:56.530"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:45:56.530" level="INFO">Clicking element '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20231012 02:45:56.530" endtime="20231012 02:45:56.622"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231012 02:45:58.624" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231012 02:45:56.623" endtime="20231012 02:45:58.624"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231012 02:45:58.625" level="INFO">Typing text 'admin' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20231012 02:45:58.625" endtime="20231012 02:45:58.717"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:45:58.719" level="INFO">Clicking element '//*[@id="login"]'.</msg>
+<status status="PASS" starttime="20231012 02:45:58.719" endtime="20231012 02:46:00.359"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231012 02:46:00.861" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231012 02:46:00.360" endtime="20231012 02:46:00.861"/>
+</kw>
+<status status="PASS" starttime="20231012 02:45:54.305" endtime="20231012 02:46:00.885"/>
+</test>
+<test id="s1-t3" name="Customize" line="33">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="pizza_order_form"]/div[1]/div[2]/div/div[1]/label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:46:00.890" level="INFO">Clicking element '//*[@id="pizza_order_form"]/div[1]/div[2]/div/div[1]/label'.</msg>
+<status status="PASS" starttime="20231012 02:46:00.890" endtime="20231012 02:46:00.979"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231012 02:46:02.981" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231012 02:46:00.980" endtime="20231012 02:46:02.981"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="select_flavor"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:46:02.981" level="INFO">Clicking element '//*[@id="select_flavor"]'.</msg>
+<status status="PASS" starttime="20231012 02:46:02.981" endtime="20231012 02:46:03.077"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="select_flavor"]/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:46:03.079" level="INFO">Clicking element '//*[@id="select_flavor"]/option[2]'.</msg>
+<status status="PASS" starttime="20231012 02:46:03.078" endtime="20231012 02:46:03.195"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="pizza_order_form"]/div[3]/div[2]/div/div[1]/label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:46:03.203" level="INFO">Clicking element '//*[@id="pizza_order_form"]/div[3]/div[2]/div/div[1]/label'.</msg>
+<status status="PASS" starttime="20231012 02:46:03.202" endtime="20231012 02:46:03.299"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="pizza_order_form"]/div[4]/div[2]/div/div[1]/div/label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:46:03.302" level="INFO">Clicking element '//*[@id="pizza_order_form"]/div[4]/div[2]/div/div[1]/div/label'.</msg>
+<status status="PASS" starttime="20231012 02:46:03.301" endtime="20231012 02:46:03.382"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="quantity"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:46:03.383" level="INFO">Clicking element '//*[@id="quantity"]'.</msg>
+<status status="PASS" starttime="20231012 02:46:03.382" endtime="20231012 02:46:03.529"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="quantity"]</arg>
+<arg>${Nmber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231012 02:46:03.532" level="INFO">Typing text '5' into text field '//*[@id="quantity"]'.</msg>
+<status status="PASS" starttime="20231012 02:46:03.531" endtime="20231012 02:46:03.741"/>
+</kw>
+<status status="PASS" starttime="20231012 02:46:00.885" endtime="20231012 02:46:03.742"/>
+</test>
+<test id="s1-t4" name="confirm" line="42">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit_button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231012 02:46:03.745" level="INFO">Clicking element '//*[@id="submit_button"]'.</msg>
+<status status="PASS" starttime="20231012 02:46:03.744" endtime="20231012 02:46:03.838"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231012 02:46:04.115" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231012 02:46:03.839" endtime="20231012 02:46:04.115"/>
+</kw>
+<status status="PASS" starttime="20231012 02:46:03.743" endtime="20231012 02:46:04.118"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231012 02:46:04.145" endtime="20231012 02:46:08.820"/>
+</kw>
+<doc>This file contains test cases for the login functionality.</doc>
+<status status="PASS" starttime="20231012 02:45:46.776" endtime="20231012 02:46:08.820"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Pizza Shop">Pizza Shop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
